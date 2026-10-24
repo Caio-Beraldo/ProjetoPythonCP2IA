@@ -56,6 +56,11 @@ def validar_entrada(texto):
 def buscar(event):
     texto = document.getElementById("busca").value
     msg = document.getElementById("mensagem")
+    if not texto.strip():
+        msg.innerText = ""
+        renderizar(instrumentos)
+        atualizar_telemetria()
+        return
     ok, resultado = validar_entrada(texto)
     if not ok:
         telemetria["bloqueadas"] += 1
