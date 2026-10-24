@@ -1,0 +1,6 @@
+{
+  "instrumentos": [
+    {"id": 1, "nome": "Violão", "imagem": "violao.png", "embedding": [0.8, 0.2, 0.5]},
+    {"id": 2, "nome": "Piano", "imagem": "piano.png", "embedding": [0.9, 0.7, 0.1]}
+  ]
+}
