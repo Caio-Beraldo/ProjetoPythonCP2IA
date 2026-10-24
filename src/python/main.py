@@ -71,10 +71,12 @@ def buscar(event):
         filtrados = [i for i in instrumentos if resultado.lower() in i["nome"].lower()]
         renderizar(filtrados)
     atualizar_telemetria()
-
+def tecla_pressionada(event):
+    if event.key == "Enter":
+        buscar(event)
 
 document.getElementById("btn-buscar").addEventListener("click", create_proxy(buscar))
-
+document.getElementById("busca").addEventListener("keydown", create_proxy(tecla_pressionada))
 
 renderizar(instrumentos)
 atualizar_telemetria()
