@@ -7,3 +7,13 @@
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background: var(--cor-fundo); color: var(--cor-texto); font-family: Arial, sans-serif; }
+header { text-align: center; padding: 2rem 1rem; background: var(--cor-primaria); }
+main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+.busca { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.busca input { flex: 1; min-width: 200px; padding: .7rem; border-radius: var(--raio); border: none; }
+.busca button { padding: .7rem 1.2rem; border: none; border-radius: var(--raio); background: var(--cor-primaria); color: #fff; cursor: pointer; }
+#mensagem { width: 100%; color: #ff6b6b; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.card { background: var(--cor-card); border-radius: var(--raio); padding: 1rem; text-align: center; }
+.card img { width: 100%; height: 160px; object-fit: contain; }
+.telemetria { margin-top: 2rem; padding: 1rem; background: var(--cor-card); border-radius: var(--raio); }
